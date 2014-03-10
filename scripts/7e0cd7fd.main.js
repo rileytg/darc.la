@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=60,b=$(".header").height()+$(".footer").height()+a,c=$(window).height()-b,d="ul.hack";$(d).height(c),stroll.bind(d)});
