@@ -1,6 +1,8 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import 'util';
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 .browsehappy {
   margin: 0.2em 0;
@@ -26,6 +28,26 @@ body {}
     padding-bottom: 19px;
   }
 }
+.process-info {
+  h1, h2, h3 {
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+  }
+  h1 {
+    font-size: 90px;
+  }
+  h2 {
+    font-size: 64px
+  }
+  h3 {
+    font-size: 36px;
+  }
+}
+
+ul.hack {
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+}
 
 /* Custom page footer */
 .footer {
@@ -39,20 +61,14 @@ body {}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-//.container {
-//    max-width: 730px;
-//}
-
-/* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
 
 /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    .logo {
+      width: 300px;
+      margin: 0 auto;
+    }
+    padding-bottom: 30px;
   }
 
 }
