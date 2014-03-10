@@ -16,7 +16,9 @@ $styled-font: 'Raleway', sans-serif;
 }
 
 /* Space out content a bit */
-body {}
+body {
+  background-image: url(../images/bricks.jpg);
+}
 
 h1, h2, h3 {
   font-weight: 400;
@@ -134,7 +136,8 @@ ul.hack li {
   font-size: 18px;
   text-align: center;
   z-index: 2;
-  background-color: lighten($dark-color, 10);
+  background-color: rgba(lighten($dark-color, 10), .7);
+
 
   -webkit-transform: translateZ(0px);
   -moz-transform: translateZ(0px);
