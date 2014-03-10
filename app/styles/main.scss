@@ -1,5 +1,9 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
+$dark-color: #171717;
+$light-color: #ededed;
+$styled-font: 'Raleway', sans-serif;
+
 @import 'sass-bootstrap/lib/bootstrap';
 @import 'util';
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -13,6 +17,11 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {}
+
+h1, h2, h3 {
+  font-weight: 400;
+  font-family: $styled-font;
+}
 
 /* Custom page header */
 .header {
@@ -29,10 +38,6 @@ body {}
   }
 }
 .process-info {
-  h1, h2, h3 {
-    font-weight: 400;
-    font-family: 'Raleway', sans-serif;
-  }
   h1 {
     font-size: 90px;
   }
@@ -44,9 +49,28 @@ body {}
   }
 }
 
+.contact-info {
+  padding-top: 58px;
+
+  .bullet {
+    font-size: 36px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  a {
+    color: $light-color;
+    font-size: 36px;
+    font-family: $styled-font;
+  }
+
+}
+
 ul.hack {
   font-weight: 400;
-  font-family: 'Raleway', sans-serif;
+  font-family: $styled-font;
 }
 
 /* Custom page footer */
@@ -73,8 +97,6 @@ ul.hack {
 
 }
 
-$dark-color: #171717;
-$light-color: #ededed;
 
 .dark-background {
   background-color: $dark-color;
